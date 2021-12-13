@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account | DCLVP Hobbies</title>
+    <script type="text/javascript">
+        function register(){
+            var LoginForm = document.getElementById("LoginForm");
+            var RegForm = document.getElementById("RegForm");
+            var Indicator = document.getElementById("Indicator");
+
+                RegForm.style.transform = "translateX(0px)";
+                LoginForm.style.transform = "translateX(0px)";
+                Indicator.style.transform = "translateX(100px)";
+        }
+        function login(){
+            var LoginForm = document.getElementById("LoginForm");
+            var RegForm = document.getElementById("RegForm");
+            var Indicator = document.getElementById("Indicator");
+
+                RegForm.style.transform = "translateX(300px)";
+                LoginForm.style.transform = "translateX(300px)";
+                Indicator.style.transform = "translateX(0px)";
+        }
+    </script>
+    <link rel="stylesheet" href="it_project2.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+    crossorigin="anonymous"/>
+    
+    
+</head>
+<body style = "background:#11c6c1">
+
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/DCLVP Hobbies borders.jpeg" width="100px">
+            </div>
+            <nav>
+                <ul id="Menu-Items">
+                    <li><a href="it_project2.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about_page.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="accounts.html">Account</a></li>
+                </ul>
+            </nav>
+            <!-- <img src="images/cart.png" width="30px" height="30px">
+            <div class="menu-icon" onclick="menutoggle()">
+                <i class="fas fa-bars"></i>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+<!-- -------Account Page----------- -->
+<div class="account-page"> 
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
+                    </div>
+
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Login</button>
+                        <a class="a-account" href="">Forgot Password?</a>
+                    </form>
+
+                    <form id="RegForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- -------Footer------- -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Socials:</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <h3>Need Help?</h3>
+                <ul>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Delivery Status</a></li>
+                    <li><a href="#">Return Status</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-3">
+                <h3><i class="far fa-copyright"></i>&nbsp;DCLVP Hobbies 2020</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
